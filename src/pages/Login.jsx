@@ -9,20 +9,20 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Retrieve credentials from localStorage
+    // Check if the credentials match
     const storedEmail = localStorage.getItem('userEmail');
     const storedPassword = localStorage.getItem('userPassword');
 
-    // Check if entered credentials match the ones in localStorage
     if (email === storedEmail && password === storedPassword) {
-      navigate('/upload');  // Redirect to upload page if credentials match
+      navigate('/upload');  // Redirect to upload page if credentials are correct
     } else {
       alert('Invalid username or password');
     }
   };
 
   return (
-    <div className="relative min-h-screen bg-moon bg-cover bg-center bg-no-repeat">
+    <div className="relative min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: 'url("https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-moon-in-the-hills-near-the-stars-in-the-backdrop-image_2696068.jpg")' }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="flex items-center justify-center min-h-screen relative z-10">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md opacity-90">
@@ -67,4 +67,3 @@ const Login = () => {
 };
 
 export default Login;
- 
