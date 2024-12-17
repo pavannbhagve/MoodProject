@@ -20,7 +20,7 @@ function Signup() {
   return (
     <div className="flex items-center justify-center h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('https://wallpapercave.com/wp/7xTFkFR.jpg')" }}>
-      <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg">
+      <div className="w-full max-w-md p-8 rounded-lg">
         <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
         <form onSubmit={handleSubmit}>
           <input

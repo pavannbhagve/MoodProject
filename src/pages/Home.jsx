@@ -2,6 +2,14 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
+    <div
+      className="min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: `url('/src/assets/images/17522.jpg')`,
+      }}
+    >
+
+    
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold text-center mb-4">Share Your Moonshots</h1>
       <p className="text-gray-400 mb-6">Capture and share the beauty of the Moon.</p>
@@ -14,7 +22,7 @@ function Home() {
         </Link>
       </div>
     </div>
+    </div>
   );
-}
-
+};
 export default Home;
